@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | foodpanda | food and more, delivered</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://www.foodpanda.com/wp-content/uploads/2023/02/cropped-fp-favicon-32x32.png">
+</head>
+
+<body class="foodpanda-about">
+    <!-- Header/Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="/">
+                    <img src="https://www.foodpanda.com/wp-content/uploads/2023/06/foodpanda_logo_2023.svg"
+                        alt="foodpanda logo">
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item current"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="newsroom.html">Newsroom</a></li>
+                    <li class="nav-item"><a href="partners.html">Partners</a></li>
+                    <li class="nav-item"><a href="pandaads.html" target="_blank">panda ads</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a href="/careers.html" target="_blank">Careers</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Choose location <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.foodpanda.com.bd" target="_blank">Bangladesh</a></li>
+                            <li><a href="https://www.foodpanda.com.kh" target="_blank">Cambodia</a></li>
+                            <li><a href="https://www.foodpanda.hk" target="_blank">Hong Kong</a></li>
+                            <li><a href="https://www.foodpanda.la" target="_blank">Laos</a></li>
+                            <li><a href="https://www.foodpanda.my" target="_blank">Malaysia</a></li>
+                            <li><a href="https://www.foodpanda.com.mm" target="_blank">Myanmar</a></li>
+                            <li><a href="https://www.foodpanda.pk" target="_blank">Pakistan</a></li>
+                            <li><a href="https://www.foodpanda.ph" target="_blank">Philippines</a></li>
+                            <li><a href="https://www.foodpanda.sg" target="_blank">Singapore</a></li>
+                            <li><a href="https://www.foodpanda.com.tw" target="_blank">Taiwan</a></li>
+                            <li><a href="https://www.foodpanda.co.th" target="_blank">Thailand</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Search and Language -->
+            <div class="header-actions">
+                <div class="search-container">
+                    <button class="search-toggle" id="searchToggle">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-form" id="searchForm">
+                        <form action="/" method="get">
+                            <input type="search" name="s" placeholder="Search" id="searchInput">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="language-switcher">
+                    <span>en</span>
+                </div>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-navigation" id="mobileNav">
+        <nav class="mobile-nav-menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li class="current"><a href="about.html">About</a></li>
+                <li><a href="/newsroom">Newsroom</a></li>
+                <li><a href="https://www.foodpanda.com/partners/">Partners</a></li>
+                <li><a href="https://pandaads.foodpanda.com" target="_blank">panda ads</a></li>
+                <li><a href="https://www.foodpanda.com/contact/">Contact</a></li>
+                <li><a href="https://careers.foodpanda.com" target="_blank">Careers</a></li>
+                <li class="mobile-dropdown">
+                    <a href="#">Choose location <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-dropdown-menu">
+                        <li><a href="https://www.foodpanda.com.bd" target="_blank">Bangladesh</a></li>
+                        <li><a href="https://www.foodpanda.com.kh" target="_blank">Cambodia</a></li>
+                        <li><a href="https://www.foodpanda.hk" target="_blank">Hong Kong</a></li>
+                        <li><a href="https://www.foodpanda.la" target="_blank">Laos</a></li>
+                        <li><a href="https://www.foodpanda.my" target="_blank">Malaysia</a></li>
+                        <li><a href="https://www.foodpanda.com.mm" target="_blank">Myanmar</a></li>
+                        <li><a href="https://www.foodpanda.pk" target="_blank">Pakistan</a></li>
+                        <li><a href="https://www.foodpanda.ph" target="_blank">Philippines</a></li>
+                        <li><a href="https://www.foodpanda.sg" target="_blank">Singapore</a></li>
+                        <li><a href="https://www.foodpanda.com.tw" target="_blank">Taiwan</a></li>
+                        <li><a href="https://www.foodpanda.co.th" target="_blank">Thailand</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="hero-background"
+            style="background-image: url('https://www.foodpanda.com/wp-content/uploads/2025/07/about-foodpanda.webp')">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>
+                        About<br>
+                        foodpanda
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <main class="main-content">
+        <!-- Introduction Section -->
+        <section class="content-section">
+            <div class="container">
+                <div class="about-intro">
+                    <div class="intro-text">
+                        <h2>From food delivery to your daily convenience companion.</h2>
+                        <p>A subsidiary of Delivery Hero, foodpanda launched in Singapore in 2014 as a food delivery
+                            platform. Dedicated to helping customers get their tasty favourites fast, it quickly won the
+                            hearts and minds of customers in APAC.</p>
+                        <p>Powered by tech and operational excellence, foodpanda has been growing its quick-commerce
+                            footprint in more than 400 cities across 11 markets in Asia – Singapore, Hong Kong,
+                            Thailand, Malaysia, Pakistan, Taiwan, Philippines, Bangladesh, Laos, Cambodia, and Myanmar.
+                        </p>
+                        <p>Thanks to dedicated partners, riders, and a team united by shared values, foodpanda is now
+                            providing millions with a convenient way to get food and groceries in a few taps.</p>
+                    </div>
+                    <div class="intro-space"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider Section -->
+        <section class="content-section bg-gray">
+            <div class="container">
+                <div class="about-slider" id="aboutSlider">
+                    <!-- Slide 1 -->
+                    <div class="slider-slide active">
+                        <div class="slide-content">
+                            <h2>Customers come first</h2>
+                            <p>We're far more than just swift food delivery. foodpanda enables customers to pick up
+                                their takeaway meals, skip boring grocery trips and send parcels. Customer needs are the
+                                core and centre of our business. Download the app to experience true convenience.</p>
+                        </div>
+                        <div class="slide-image"
+                            style="background-image: url('https://www.foodpanda.com/wp-content/uploads/2025/07/fp-about-3.webp')">
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slider-slide">
+                        <div class="slide-content">
+                            <h2>Growing with our partners</h2>
+                            <p>We work with the best restaurants and stores. We support our partners every step of the
+                                way and empower their growth. Ready to take your business to the next level?</p>
+                        </div>
+                        <div class="slide-image"
+                            style="background-image: url('https://www.foodpanda.com/wp-content/uploads/2025/07/fp-about-2.webp')">
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slider-slide">
+                        <div class="slide-content">
+                            <h2>Our riders are our heroes</h2>
+                            <p>We're here to provide exciting opportunities and empower work flexibility. Learn more
+                                about our riders' journey or sign up to become one.</p>
+                        </div>
+                        <div class="slide-image"
+                            style="background-image: url('https://www.foodpanda.com/wp-content/uploads/2025/07/fp-about-4.webp')">
+                        </div>
+                    </div>
+
+                    <!-- Slider Controls -->
+                    <div class="slider-controls">
+                        <button class="slider-prev" id="sliderPrev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="slider-pagination">
+                            <span class="pagination-dot active" data-slide="0"></span>
+                            <span class="pagination-dot" data-slide="1"></span>
+                            <span class="pagination-dot" data-slide="2"></span>
+                        </div>
+                        <button class="slider-next" id="sliderNext">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our values</h2>
+                </div>
+
+                <div class="values-slider" id="valuesSlider">
+                    <!-- Values Navigation -->
+                    <div class="values-nav">
+                        <button class="value-nav-btn active" data-value="0">prioritise, decide, deliver</button>
+                        <button class="value-nav-btn" data-value="1">start with customer, end with customer</button>
+                        <button class="value-nav-btn" data-value="2">own it end-to-end</button>
+                        <button class="value-nav-btn" data-value="3">challenge the status quo</button>
+                        <button class="value-nav-btn" data-value="4">we before me</button>
+                        <button class="value-nav-btn" data-value="5">plan for tomorrow, focus on today</button>
+                    </div>
+
+                    <!-- Values Content -->
+                    <div class="values-content">
+                        <!-- Value 1 -->
+                        <div class="value-content active">
+                            <div class="value-text">
+                                <h3>prioritise, decide, deliver</h3>
+                                <p>We are disciplined about focusing on what matters. When we face uncertainty, we put
+                                    considered thought behind our actions and continue to deliver because it is only
+                                    through execution that we learn, iterate, and improve.</p>
+                            </div>
+                            <div class="value-image">
+                                <img src="https://www.foodpanda.com/wp-content/uploads/2024/06/02_prioritise-decide_deliver__500x500.webp"
+                                    alt="prioritise, decide, deliver">
+                            </div>
+                        </div>
+
+                        <!-- Value 2 -->
+                        <div class="value-content">
+                            <div class="value-text">
+                                <h3>start with customer, end with customer</h3>
+                                <p>We want our consumers, vendors, riders, employees (including prospective ones) – the
+                                    customers who make up our ecosystem – to keep coming back to the product, service,
+                                    and experience we create. To achieve this, we keep them at the centre of everything
+                                    we do.</p>
+                            </div>
+                            <div class="value-image">
+                                <img src="https://www.foodpanda.com/wp-content/uploads/2024/06/01_start-with-customer-end-with-customer_500x500.webp"
+                                    alt="start with customer, end with customer">
+                            </div>
+                        </div>
+
+                        <!-- Value 3 -->
+                        <div class="value-content">
+                            <div class="value-text">
+                                <h3>own it end-to-end</h3>
+                                <p>We take pride in our work by delivering on our commitments. When a problem stretches
+                                    past our areas of responsibility or expertise, we bridge the gap, we collaborate and
+                                    seek out resources to get the job done.</p>
+                            </div>
+                            <div class="value-image">
+                                <img src="https://www.foodpanda.com/wp-content/uploads/2024/06/03_own-it-end-to-end__500x500.webp"
+                                    alt="own it end-to-end">
+                            </div>
+                        </div>
+
+                        <!-- Value 4 -->
+                        <div class="value-content">
+                            <div class="value-text">
+                                <h3>challenge the status quo</h3>
+                                <p>Our environment is ever-changing and we meet these changes head-on by adopting a
+                                    progress-driven mindset. We value diverse inputs, we push the envelope to open up
+                                    possibilities for innovation, growth and ultimately staying ahead – for our
+                                    customers, for foodpanda, and ourselves.</p>
+                            </div>
+                            <div class="value-image">
+                                <img src="https://www.foodpanda.com/wp-content/uploads/2024/06/04_challenge-the-status-quo__500x500.webp"
+                                    alt="challenge the status quo">
+                            </div>
+                        </div>
+
+                        <!-- Value 5 -->
+                        <div class="value-content">
+                            <div class="value-text">
+                                <h3>we before me</h3>
+                                <p>Although we can make a difference individually, we will go further, accomplish more
+                                    and touch more lives if we do it as one team and one organisation working towards
+                                    our common goals.</p>
+                            </div>
+                            <div class="value-image">
+                                <img src="https://www.foodpanda.com/wp-content/uploads/2024/06/05_we-before-me__500x500.webp"
+                                    alt="we before me">
+                            </div>
+                        </div>
+
+                        <!-- Value 6 -->
+                        <div class="value-content">
+                            <div class="value-text">
+                                <h3>plan for tomorrow, focus on today</h3>
+                                <p>We balance strategic planning with tactical execution. We plan for the future while
+                                    remaining focused on delivering excellence in our daily operations.</p>
+                            </div>
+                            <div class="value-image">
+                                <img src="https://www.foodpanda.com/wp-content/uploads/2024/06/06_plan-for-tomorrow-focus-on-today__500x500.webp"
+                                    alt="plan for tomorrow, focus on today">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Team Section -->
+        <section class="content-section bg-gray">
+            <div class="container">
+                <div class="media-text media-text-reverse">
+                    <div class="media-content">
+                        <h2>Join the panda team!</h2>
+                        <p>Hungry for growth? There's a seat at our table! We're looking for the best in tech,
+                            marketing, sales, logistics, account management and more. Explore career opportunities at
+                            foodpanda now.</p>
+                        <a href="https://careers.foodpanda.com/jobs/" target="_blank" class="btn btn-primary">view
+                            jobs</a>
+                    </div>
+                    <div class="media-image">
+                        <img src="https://www.foodpanda.com/wp-content/uploads/2025/07/fp-home-3.webp"
+                            alt="Join our team">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="https://www.foodpanda.com/wp-content/uploads/2023/06/foodpanda_logo_2023.svg"
+                    alt="foodpanda logo">
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <div class="footer-column">
+                        <h3>Navigate</h3>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="https://www.foodpanda.com/contact/">Contact</a></li>
+                            <li><a href="https://www.foodpanda.com/newsroom/">Newsroom</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Collaborate</h3>
+                        <ul>
+                            <li><a href="https://careers.foodpanda.com/">Explore careers</a></li>
+                            <li><a href="https://www.foodpanda.com/careers/riders/">Become a rider</a></li>
+                            <li><a href="https://www.foodpanda.sg/corporate">Feed your team</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Follow us on</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=273039666130793" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/foodpanda" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/foodpandasg" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>Copyright © 2025 <a href="https://foodpanda.com">foodpanda</a></p>
+                </div>
+                <div class="footer-legal">
+                    <a href="https://www.foodpanda.com/privacy-policy/">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuToggle').addEventListener('click', function () {
+            document.getElementById('mobileNav').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Search toggle
+        document.getElementById('searchToggle').addEventListener('click', function () {
+            document.getElementById('searchForm').classList.toggle('active');
+        });
+
+        // Back to top
+        document.getElementById('backToTop').addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Show/hide back to top button
+        window.addEventListener('scroll', function () {
+            const backToTopBtn = document.getElementById('backToTop');
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        // Dropdown menus
+        document.querySelectorAll('.dropdown > a').forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                if (window.innerWidth > 768) {
+                    e.preventDefault();
+                    const dropdown = this.parentElement;
+                    dropdown.classList.toggle('active');
+                }
+            });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown').forEach(function (dropdown) {
+                    dropdown.classList.remove('active');
+                });
+            }
+        });
+
+        // About Slider
+        const aboutSlider = document.getElementById('aboutSlider');
+        const slides = aboutSlider.querySelectorAll('.slider-slide');
+        const prevBtn = document.getElementById('sliderPrev');
+        const nextBtn = document.getElementById('sliderNext');
+        const dots = aboutSlider.querySelectorAll('.pagination-dot');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        prevBtn.addEventListener('click', function () {
+            let newIndex = currentSlide - 1;
+            if (newIndex < 0) newIndex = slides.length - 1;
+            showSlide(newIndex);
+        });
+
+        nextBtn.addEventListener('click', function () {
+            let newIndex = currentSlide + 1;
+            if (newIndex >= slides.length) newIndex = 0;
+            showSlide(newIndex);
+        });
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', function () {
+                const slideIndex = parseInt(this.getAttribute('data-slide'));
+                showSlide(slideIndex);
+            });
+        });
+
+        // Auto slide every 5 seconds
+        setInterval(() => {
+            let newIndex = currentSlide + 1;
+            if (newIndex >= slides.length) newIndex = 0;
+            showSlide(newIndex);
+        }, 5000);
+
+        // Values Slider
+        const valuesSlider = document.getElementById('valuesSlider');
+        const valueBtns = valuesSlider.querySelectorAll('.value-nav-btn');
+        const valueContents = valuesSlider.querySelectorAll('.value-content');
+
+        valueBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const valueIndex = parseInt(this.getAttribute('data-value'));
+
+                valueBtns.forEach(b => b.classList.remove('active'));
+                valueContents.forEach(c => c.classList.remove('active'));
+
+                this.classList.add('active');
+                valueContents[valueIndex].classList.add('active');
+            });
+        });
+
+        // Mobile dropdown
+        document.querySelectorAll('.mobile-dropdown > a').forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                const dropdown = this.parentElement;
+                dropdown.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

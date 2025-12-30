@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partners | foodpanda | food and more, delivered</title>
+    <link rel="icon" href="https://www.foodpanda.com/wp-content/uploads/2023/02/cropped-fp-favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #FF2B85;
+            --secondary-color: #000;
+            --text-color: #333;
+            --light-gray: #f5f5f6;
+            --white: #fff;
+            --footer-bg: #1a1a1a;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .site-header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        /* Navigation */
+        .main-navigation {
+            display: flex;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-item>a {
+            color: var(--secondary-color);
+            font-weight: 600;
+            font-size: 14px;
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nav-item.current>a {
+            color: var(--primary-color);
+        }
+
+        .nav-item>a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Header Actions */
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .search-toggle,
+        .mobile-menu-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            color: var(--secondary-color);
+            padding: 5px;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 24px;
+            height: 18px;
+        }
+
+        .mobile-menu-toggle span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        .partners-hero {
+            position: relative;
+            min-height: 60vh;
+            background: linear-gradient(135deg, var(--primary-color) 0%, rgba(255, 43, 133, 0.9) 100%),
+                url('https://www.foodpanda.com/wp-content/uploads/2025/07/join-panda-partner-to-grow-restaurant-sales.png');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            position: relative;
+            padding: 100px 20px;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: var(--white);
+            color: var(--primary-color);
+            border: none;
+            border-radius: 4px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            transform: translateY(-2px);
+        }
+
+        /* Intro Section */
+        .intro-section {
+            padding: 80px 0;
+            background-color: var(--light-gray);
+            text-align: center;
+        }
+
+        .intro-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .intro-section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: var(--text-color);
+        }
+
+        /* Countries Slider */
+        .countries-slider {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        .slider-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .slider-nav-btn {
+            padding: 10px 20px;
+            background-color: var(--light-gray);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .slider-nav-btn:hover {
+            background-color: #e8e8e8;
+        }
+
+        .slider-nav-btn.active {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .slider-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            min-height: 400px;
+            background-color: var(--light-gray);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .slider-text {
+            padding: 60px;
+        }
+
+        .slider-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .slider-text p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .slider-image {
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .slider-btn {
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider-btn:hover {
+            background: #e6006e;
+            transform: scale(1.1);
+        }
+
+        /* Benefits Grid */
+        .benefits-section {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        .benefits-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--secondary-color);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .benefit-card {
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
+        }
+
+        .benefit-card h4 {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            color: var(--white);
+            font-size: 1.5rem;
+            z-index: 2;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            padding: 80px 0;
+            background-color: var(--light-gray);
+            text-align: center;
+        }
+
+        .how-it-works h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--secondary-color);
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .step-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .step-icon img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .step-number {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .step-card h4 {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        .faq-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+            color: var(--secondary-color);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--light-gray);
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            padding: 20px 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '−';
+        }
+
+        .faq-answer {
+            padding: 0 0 20px;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: var(--footer-bg);
+            color: var(--white);
+            padding: 60px 0 30px;
+        }
+
+        .footer-logo {
+            margin-bottom: 40px;
+        }
+
+        .footer-logo img {
+            height: 40px;
+            width: auto;
+            filter: brightness(0) invert(1);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        .footer-nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-column a {
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        .footer-column a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-social h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            font-size: 18px;
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+        }
+
+        .copyright a {
+            color: var(--primary-color);
+        }
+
+        .copyright a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-legal a {
+            color: #ccc;
+        }
+
+        .footer-legal a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 44px;
+            height: 44px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: #e6006e;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .main-navigation {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .slider-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .slider-text {
+                padding: 40px;
+            }
+
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .steps-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .footer-nav {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                padding: 60px 20px;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .slider-text {
+                padding: 30px;
+            }
+
+            .slider-text h2 {
+                font-size: 1.8rem;
+            }
+
+            .slider-image {
+                height: 300px;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .slider-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .intro-section h2 {
+                font-size: 2rem;
+            }
+
+            .benefits-section h2,
+            .how-it-works h2,
+            .faq-section h2 {
+                font-size: 2rem;
+            }
+
+            .step-card {
+                padding: 30px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="https://www.foodpanda.com/wp-content/uploads/2023/06/foodpanda_logo_2023.svg"
+                        alt="foodpanda">
+                </a>
+            </div>
+
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="newsroom.html">Newsroom</a></li>
+                    <li class="nav-item current"><a href="partners.html">Partners</a></li>
+                    <li class="nav-item"><a href="pandaads.html" target="_blank">panda ads</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a href="/careers.html" target="_blank">Careers</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Choose location <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="search-toggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="partners-hero">
+        <div class="container hero-content">
+            <h1>Get more orders with foodpanda</h1>
+            <a href="#countries" class="button">Become a Partner!</a>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro-section">
+        <div class="container">
+            <h2>Become a restaurant or local shop partner</h2>
+            <p>Take your business to new heights by partnering with foodpanda, the leading delivery service trusted by
+                businesses large and small. We dare to always go further, helping you reach untapped customer bases,
+                boost order volume, and drive more sales.</p>
+        </div>
+    </section>
+
+    <!-- Countries Slider -->
+    <section id="countries" class="countries-slider">
+        <div class="container">
+            <div class="slider-nav" id="sliderNav">
+                <button class="slider-nav-btn active" data-country="malaysia">Malaysia</button>
+                <button class="slider-nav-btn" data-country="philippines">Philippines</button>
+                <button class="slider-nav-btn" data-country="bangladesh">Bangladesh</button>
+                <button class="slider-nav-btn" data-country="hongkong">Hong Kong</button>
+                <button class="slider-nav-btn" data-country="pakistan">Pakistan</button>
+                <button class="slider-nav-btn" data-country="singapore">Singapore</button>
+                <button class="slider-nav-btn" data-country="taiwan">Taiwan</button>
+                <button class="slider-nav-btn" data-country="cambodia">Cambodia</button>
+                <button class="slider-nav-btn" data-country="laos">Laos</button>
+                <button class="slider-nav-btn" data-country="myanmar">Myanmar</button>
+            </div>
+
+            <div class="slider-content" id="sliderContent">
+                <div class="slider-text">
+                    <h2>Are you ready to reach more customers?</h2>
+                    <p>Don't miss out on earnings. Join foodpanda to reach more customers and increase revenue.</p>
+                    <button class="button">Let's get started!</button>
+                </div>
+                <div class="slider-image"
+                    style="background-image: url('https://www.foodpanda.com/wp-content/uploads/2025/07/mehdi-ben-BOhxVT-VCRs-unsplash-900x600.webp')">
+                </div>
+            </div>
+
+            <div class="slider-controls">
+                <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Grid -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2>Why partner with foodpanda?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card"
+                    style="background-image: url('https://www.foodpanda.com/wp-content/uploads/2025/07/Riders_C-SM_photo_static_horizontal_retouch-batch-2_V02_SJ-900x600.webp')">
+                    <h4>REACH NEW CUSTOMERS</h4>
+                </div>
+                <div class="benefit-card"
+                    style="background-image: url('https://www.foodpanda.com/wp-content/uploads/2021/05/foodpanda-3-scaled-1-900x596.jpg')">
+                    <h4>BOOST YOUR ORDER VOLUME</h4>
+                </div>
+                <div class="benefit-card"
+                    style="background-image: url('https://www.foodpanda.com/wp-content/uploads/2023/02/foodpanda-home-2-900x506.jpg')">
+                    <h4>DRIVE MORE SALES</h4>
+                </div>
+                <div class="benefit-card"
+                    style="background-image: url('https://www.foodpanda.com/wp-content/uploads/2021/09/【新聞圖片3】foodpanda-精選多家高人氣烤肉餐廳，經典美食一鍵到府幫你解解饞！-1-900x600.jpg')">
+                    <h4>INCREASE CUSTOMER SATISFACTION</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How does it work?</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <img src="https://www.foodpanda.com/wp-content/uploads/2025/07/foodora-partners-design2-83x90-1.webp"
+                            alt="Step 1">
+                    </div>
+                    <div class="step-number">1</div>
+                    <h4>The customer adds their delivery address in the app or on the website and then selects a store
+                        or restaurant in their area.</h4>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <img src="https://www.foodpanda.com/wp-content/uploads/2025/07/foodora-design-riders-1-90x72-1.webp"
+                            alt="Step 2">
+                    </div>
+                    <div class="step-number">2</div>
+                    <h4>You accept the order with the reading tablet and prepare it for the collection time.</h4>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <img src="https://www.foodpanda.com/wp-content/uploads/2025/07/independence-74x90-1.webp"
+                            alt="Step 3">
+                    </div>
+                    <div class="step-number">3</div>
+                    <h4>A rider will come to you at the specified time and collect the order. It is then delivered
+                        directly to the customer!</h4>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <img src="https://www.foodpanda.com/wp-content/uploads/2025/07/income-74x90-1.webp"
+                            alt="Step 4">
+                    </div>
+                    <div class="step-number">4</div>
+                    <h4>Twice per month you receive payments for the orders you have received via foodpanda.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Have more questions? Check it out here</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">How can I receive orders?</div>
+                    <div class="faq-answer">
+                        <p>There are two ways to receive orders. Via a tablet, or if you have some kind of restaurant
+                            software (POS provider), it is also possible to connect it. In this case, indicate this
+                            during the connection process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Are there any costs if I register on the site?</div>
+                    <div class="faq-answer">
+                        <p>There is no cost for registering on the site. foodpanda only charges a commission if a sale
+                            has taken place. So you only have to pay when you sell something.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What are the opening hours like?</div>
+                    <div class="faq-answer">
+                        <p>Choose your specific opening hours and temporarily close our service if you have a lot to do.
+                            We are there when you need us!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="https://www.foodpanda.com/wp-content/uploads/2023/06/foodpanda_logo_2023.svg"
+                    alt="foodpanda logo">
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <div class="footer-column">
+                        <h3>Navigate</h3>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Newsroom</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Collaborate</h3>
+                        <ul>
+                            <li><a href="#">Explore careers</a></li>
+                            <li><a href="#">Become a rider</a></li>
+                            <li><a href="#">Feed your team</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Follow us on</h3>
+                    <div class="social-icons">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>Copyright © 2025 <a href="#">foodpanda</a></p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // Countries Data
+        const countriesData = [
+            {
+                id: 'malaysia',
+                title: 'Are you ready to reach more customers?',
+                text: "Don't miss out on earnings. Join foodpanda to reach more customers and increase revenue.",
+                button: "Let's get started!",
+                image: 'https://www.foodpanda.com/wp-content/uploads/2025/07/mehdi-ben-BOhxVT-VCRs-unsplash-900x600.webp'
+            },
+            {
+                id: 'philippines',
+                title: 'Are you ready to expand your reach and connect with new customers?',
+                text: 'Let more customers find you. Partner with foodpanda and increase online visibility.',
+                button: 'Get Started',
+                image: 'https://www.foodpanda.com/wp-content/uploads/2025/07/sj-Q4aFSPmYjNE-unsplash-900x600.webp'
+            },
+            {
+                id: 'bangladesh',
+                title: 'Ready to expand your reach to more customers?',
+                text: "Don't just serve locals, serve your city. Let foodpanda connect you to new customers.",
+                button: 'Get Started',
+                image: 'https://www.foodpanda.com/wp-content/uploads/2025/07/johnyvino-P-900x600.webp'
+            },
+            {
+                id: 'hongkong',
+                title: 'Would you like to increase your customer base and brand reach?',
+                text: "foodpanda's campaigns and offers puts your restaurant in front of thousands of customers.",
+                button: 'Get started!',
+                image: 'https://www.foodpanda.com/wp-content/uploads/2025/07/mche-lee-kGA-900x600.webp'
+            },
+            {
+                id: 'pakistan',
+                title: 'Ready to expand your reach?',
+                text: "Don't miss out on earnings. Join foodpanda to reach more customers and increase revenue.",
+                button: 'Get started now!',
+                image: 'https://www.foodpanda.com/wp-content/uploads/2025/07/polly-sadler-900x600.webp'
+            },
+            {
+                id: 'singapore',
+                title: 'Are you ready to reach new customers?',
+                text: 'Boost your profits. Get more orders and better margins when you partner with foodpanda.',
+                button: 'Sign Up Now',
+                image: 'https://www.foodpanda.com/wp-content/uploads/2025/07/abillion-97i3-900x600.webp'
+            },
+            {
+                id: 'taiwan',
+                title: 'Would you like to boost customer reach and revenue?',
+                text: "Don't miss out on earnings. Join foodpanda to reach more customers and increase revenue.",
+                button: 'Start now!',
+                image: 'https://www.foodpanda.com/wp-content/uploads/2025/07/daniel-honies-qJX_J6U5Vm4-unsplash-900x600.webp'
+            },
+            {
+                id: 'cambodia',
+                title: 'Looking to grow your business with your customers?',
+                text: "Don't wait - Sign up now to start growing your business with deliveries!",
+                button: 'Get Started Now!',
+                image: 'https://www.foodpanda.com/wp-content/uploads/2025/07/jane-Ikax-633x900.webp'
+            },
+            {
+                id: 'laos',
+                title: 'Are you ready to take your success further?',
+                text: 'Achieve more success and sales by delivering your food and products out to your customers!',
+                button: 'Start now!',
+                image: 'https://www.foodpanda.com/wp-content/uploads/2025/07/doan-anh-afK-900x600.webp'
+            },
+            {
+                id: 'myanmar',
+                title: 'Do you want your business to go further?',
+                text: "Don't wait - Sign up now to be our partner and reach further with your business!",
+                button: 'Start now!',
+                image: 'https://www.foodpanda.com/wp-content/uploads/2025/07/tatiana-demelo-a22j2b-900x600.webp'
+            }
+        ];
+
+        // Slider Functionality
+        let currentSlide = 0;
+        const sliderContent = document.getElementById('sliderContent');
+        const sliderNav = document.getElementById('sliderNav');
+        const navButtons = sliderNav.querySelectorAll('.slider-nav-btn');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        function updateSlider(index) {
+            const country = countriesData[index];
+
+            // Update slider content
+            sliderContent.innerHTML = `
+                <div class="slider-text">
+                    <h2>${country.title}</h2>
+                    <p>${country.text}</p>
+                    <button class="button">${country.button}</button>
+                </div>
+                <div class="slider-image" style="background-image: url('${country.image}')"></div>
+            `;
+
+            // Update active nav button
+            navButtons.forEach((btn, i) => {
+                btn.classList.toggle('active', i === index);
+            });
+
+            currentSlide = index;
+        }
+
+        // Initialize slider
+        updateSlider(0);
+
+        // Navigation button events
+        navButtons.forEach((btn, index) => {
+            btn.addEventListener('click', () => updateSlider(index));
+        });
+
+        // Previous/Next button events
+        prevBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + countriesData.length) % countriesData.length;
+            updateSlider(currentSlide);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % countriesData.length;
+            updateSlider(currentSlide);
+        });
+
+        // FAQ Functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+
+        // Back to Top
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mainNavigation = document.querySelector('.main-navigation');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mainNavigation.style.display = mainNavigation.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Responsive navigation
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 1024) {
+                mainNavigation.style.display = 'flex';
+            } else {
+                mainNavigation.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
